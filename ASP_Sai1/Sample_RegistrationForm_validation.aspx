@@ -49,12 +49,26 @@
                 </tr>
                 <tr>
                     <td>
+                        <asp:Label ID="lblAge" runat="server" Text="Age :"> </asp:Label>
+                    </td>
+                    <td>
+                        <asp:TextBox ID="txtAge" runat="server"></asp:TextBox>
+                        <asp:RequiredFieldValidator ID="rfvAge" runat="server" ControlToValidate="txtAge" ErrorMessage="Please enter age !"
+                             ForeColor="Red" ></asp:RequiredFieldValidator>
+                        <asp:RangeValidator ID="rvtxtAge" runat="server" ControlToValidate="txtAge" ErrorMessage="PLease enter valid age!" ForeColor="Red"
+                             MinimumValue="18" MaximumValue="35"></asp:RangeValidator>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
                         <asp:Label ID="lblMobileno" runat="server" Text="Mobile : "></asp:Label>
                     </td>
                     <td>
                         <asp:TextBox ID="txtMobileno" runat="server"></asp:TextBox>
                         <asp:RequiredFieldValidator ID="rfvMobileno" runat="server" ForeColor="Red"
                              ErrorMessage="Please enter Mobile number !" ControlToValidate="txtMobileno"></asp:RequiredFieldValidator>
+                        <asp:RegularExpressionValidator ID="revMobileno" runat="server" ControlToValidate="txtMobileno" ErrorMessage="Please enter valid mobile number"
+                             ForeColor="Red" ValidationExpression="\d{10}"></asp:RegularExpressionValidator>
                     </td>
                 </tr>
                 <tr>
@@ -62,6 +76,7 @@
                         <asp:Label ID="lblPwd" runat="server" Text="Password : "></asp:Label>
                     </td>
                     <td>
+                        <asp:TextBox ID="txtPwd" runat="server" TextMode="Password"></asp:TextBox>
                         <asp:RequiredFieldValidator ID="rfvPwd" runat="server" ForeColor="Red"
                              ErrorMessage="Please enter password ! " ControlToValidate="txtPwd"></asp:RequiredFieldValidator>
                     </td>
