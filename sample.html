@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <title> Sample Page
+   <script
+  </title> 
+ </head>
+ <body>
+  <p>This is web page</p>
+  <h1>Head </h1>
+  <h2> Head </h2>
+  <h3>Head</h3>
+  <h4>Head</h4>
+  <h5>Head</h5>
+  <h6>Head</h6>
+  <table>
+   <tr>
+     <td> UserName :	 </td>
+     <td><input type="text" name="textName" id="textId"/>  </td> 
+   </tr>
+   <tr>
+    <td> Password : </td>
+    <td> <input type="password" name="emailName" id="emailId" /> </td> 
+   </tr>
+   <tr>
+    <td></td>
+    <td><button onclick="PrintText()">Submit</button></td>   
+   <tr>
+   <tr>
+  
+    <td><h3 id="result1"></h3></td>  
+    <td><h3 id="result2"></h3></td>
+   <tr> 
+  </table>    
+  <script>
+    function PrintText(){
+      var name=document.getElementById("textId").value;
+      var pass=document.getElementById("emailId").value;
+          document.getElementById("result1").innerHTML= name;
+          document.getElementById("result2").innerHTML=pass;   
+    }
+  </script>  
+  <img src="D:\ASP\ASP_Sai1\ASP_Sai1\Images\dotnet_logo.png" height="100px" width="100px"/>  	
+ </body> 
+
+</html>		
