@@ -43,6 +43,8 @@
                         <asp:TextBox ID="txtEmail" runat="server" ></asp:TextBox>
                         <asp:RequiredFieldValidator ID="rfvEmail" runat="server" ForeColor="Red"
                              ErrorMessage="Please enter Email !" ControlToValidate="txtEmail"></asp:RequiredFieldValidator>
+                        <asp:RegularExpressionValidator ID="rev" runat="server" ControlToValidate="txtEmail" ErrorMessage="Please enter valid Email " 
+                            ForeColor="Red" ValidationExpression="\w+([-+.']\w+)*@\w+([-.]*\w+)*\.\w+([-.]\+)*"></asp:RegularExpressionValidator>
                     </td>
                 </tr>
                 <tr>
@@ -60,17 +62,20 @@
                         <asp:Label ID="lblPwd" runat="server" Text="Password : "></asp:Label>
                     </td>
                     <td>
-                        <asp:TextBox ID="txtPwd" runat="server"></asp:TextBox>
                         <asp:RequiredFieldValidator ID="rfvPwd" runat="server" ForeColor="Red"
                              ErrorMessage="Please enter password ! " ControlToValidate="txtPwd"></asp:RequiredFieldValidator>
                     </td>
                 </tr>
                 <tr>
                     <td>
-                        <asp:Label ID="lblCpwd" runat="server" Text="Confirm Password :"></asp:Label>
+                        <asp:Label ID="lblCpwd" runat="server" Text="Confirm Password :"  ></asp:Label>
                     </td>
                     <td>
-                        <asp:TextBox ID="txtCpwd" runat="server"></asp:TextBox>
+                        <asp:TextBox ID="txtCpwd" runat="server" TextMode="Password"></asp:TextBox>
+                        <asp:RequiredFieldValidator ID="rfwCpwd" runat="server" ForeColor="Red"
+                             ErrorMessage="Please confirm password !" ControlToValidate="txtCpwd" ></asp:RequiredFieldValidator>
+                        <asp:CompareValidator ID="cfv" runat="server" ControlToCompare="txtpwd" ControlToValidate="txtCpwd" 
+                             ErrorMessage="Password and confirm password should be same" ForeColor="Red"></asp:CompareValidator>
                     </td>
                 </tr>
                 <tr>
