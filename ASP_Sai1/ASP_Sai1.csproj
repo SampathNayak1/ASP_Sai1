@@ -132,6 +132,7 @@
     <Content Include="Login.aspx" />
     <Content Include="Sample.html" />
     <Content Include="Sample_RegistrationForm.aspx" />
+    <Content Include="Sample_RegistrationForm_validation.aspx" />
     <Content Include="Scripts\bootstrap.bundle.js" />
     <Content Include="Scripts\bootstrap.bundle.min.js" />
     <Content Include="Scripts\bootstrap.esm.js" />
@@ -277,6 +278,13 @@
     </Compile>
     <Compile Include="Sample_RegistrationForm.aspx.designer.cs">
       <DependentUpon>Sample_RegistrationForm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Sample_RegistrationForm_validation.aspx.cs">
+      <DependentUpon>Sample_RegistrationForm_validation.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Sample_RegistrationForm_validation.aspx.designer.cs">
+      <DependentUpon>Sample_RegistrationForm_validation.aspx</DependentUpon>
     </Compile>
     <Compile Include="Site.Master.cs">
       <DependentUpon>Site.Master</DependentUpon>
