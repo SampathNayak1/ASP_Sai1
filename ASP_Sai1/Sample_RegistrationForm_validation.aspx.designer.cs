@@ -141,13 +141,13 @@ namespace ASP_Sai1
         protected global::System.Web.UI.WebControls.RequiredFieldValidator rfvAge;
 
         /// <summary>
-        /// rvtxtAge control.
+        /// cvAge control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.RangeValidator rvtxtAge;
+        protected global::System.Web.UI.WebControls.CustomValidator cvAge;
 
         /// <summary>
         /// lblMobileno control.
