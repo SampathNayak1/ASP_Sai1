@@ -131,6 +131,7 @@
     <Content Include="HTML_Conntrols.html" />
     <Content Include="Images\dotnet_logo.png" />
     <Content Include="JobApplication.aspx" />
+    <Content Include="LifeCycleAsp.aspx" />
     <Content Include="Login.aspx" />
     <Content Include="Sample.html" />
     <Content Include="Sample_RegistrationForm.aspx" />
@@ -280,6 +281,13 @@
     </Compile>
     <Compile Include="JobApplication.aspx.designer.cs">
       <DependentUpon>JobApplication.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="LifeCycleAsp.aspx.cs">
+      <DependentUpon>LifeCycleAsp.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="LifeCycleAsp.aspx.designer.cs">
+      <DependentUpon>LifeCycleAsp.aspx</DependentUpon>
     </Compile>
     <Compile Include="Login.aspx.cs">
       <DependentUpon>Login.aspx</DependentUpon>
