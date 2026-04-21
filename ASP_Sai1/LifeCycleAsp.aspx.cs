@@ -43,7 +43,19 @@ namespace ASP_Sai1
 
         protected void btnSubmit_Click(object sender, EventArgs e)
         {
-            
+            if (rbnTelugu.Checked)
+            {
+                lblTelugu.Text = "Selelcted Language is Telugu";
+            }
+            else if (rbnEnglish.Checked)
+            {
+                lblEnglish.Text = "Selected Language is English";
+            }
+            else if (rbnHindi.Checked)
+                {
+                    lblHindi.Text = "Selected Language is Hinid";
+                }
+
         }
 
         protected void chkTennis_CheckedChanged(object sender, EventArgs e)
@@ -71,7 +83,7 @@ namespace ASP_Sai1
         }
 
         protected void rbnTelugu_CheckedChanged(object sender, EventArgs e)
-        { 
+        {
             if (rbnTelugu.Checked)
             {
                 lblTelugu.Text = "Selelcted Language is Telugu";
