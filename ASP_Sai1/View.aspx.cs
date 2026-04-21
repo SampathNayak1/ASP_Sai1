@@ -18,10 +18,18 @@ namespace ASP_Sai1
         }
 
         protected void btnSubmit_Click(object sender, EventArgs e)
+
         {
-            int count=(int)ViewState["Clickcount"];
+
+            //Without using viewstate  
+            //int count = 0;
+            //count++;
+            //lbl1.Text = "Clickcount" + count;
+
+            //With viewstate
+            int count = (int)ViewState["Clickcount"];
             count++;
-            ViewState["Clickcount"]=count;
+            ViewState["Clickcount"] = count;
             lbl1.Text = "Clickcount" + count;
         }
     }
