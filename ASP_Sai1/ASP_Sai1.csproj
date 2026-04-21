@@ -126,9 +126,11 @@
     <Content Include="DropDownList1.aspx" />
     <Content Include="DropDownList_CascadingDDL.aspx" />
     <Content Include="favicon.ico" />
+    <Content Include="FresherJobITApplication.aspx" />
     <Content Include="Global.asax" />
     <Content Include="HTML_Conntrols.html" />
     <Content Include="Images\dotnet_logo.png" />
+    <Content Include="JobApplication.aspx" />
     <Content Include="Login.aspx" />
     <Content Include="Sample.html" />
     <Content Include="Sample_RegistrationForm.aspx" />
@@ -161,6 +163,7 @@
     <Content Include="Content\bootstrap-grid.rtl.css.map" />
     <Content Include="Content\bootstrap-grid.min.css.map" />
     <Content Include="Content\bootstrap-grid.css.map" />
+    <Content Include="ExperiencedITJobApplication.aspx" />
     <None Include="Scripts\jquery-3.7.0.intellisense.js" />
     <Content Include="Scripts\jquery-3.7.0.js" />
     <Content Include="Scripts\jquery-3.7.0.min.js" />
@@ -261,8 +264,22 @@
     <Compile Include="DropDownList_CascadingDDL.aspx.designer.cs">
       <DependentUpon>DropDownList_CascadingDDL.aspx</DependentUpon>
     </Compile>
+    <Compile Include="FresherJobITApplication.aspx.cs">
+      <DependentUpon>FresherJobITApplication.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FresherJobITApplication.aspx.designer.cs">
+      <DependentUpon>FresherJobITApplication.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="JobApplication.aspx.cs">
+      <DependentUpon>JobApplication.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="JobApplication.aspx.designer.cs">
+      <DependentUpon>JobApplication.aspx</DependentUpon>
     </Compile>
     <Compile Include="Login.aspx.cs">
       <DependentUpon>Login.aspx</DependentUpon>
@@ -313,6 +330,13 @@
     </Compile>
     <Compile Include="ViewSwitcher.ascx.designer.cs">
       <DependentUpon>ViewSwitcher.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="ExperiencedITJobApplication.aspx.cs">
+      <DependentUpon>ExperiencedITJobApplication.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ExperiencedITJobApplication.aspx.designer.cs">
+      <DependentUpon>ExperiencedITJobApplication.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
