@@ -16,6 +16,14 @@ namespace ASP_Sai1
             // Code that runs on application startup
             RouteConfig.RegisterRoutes(RouteTable.Routes);
             BundleConfig.RegisterBundles(BundleTable.Bundles);
+
+
+
+            Application["UserCount"] = 0;
+        }
+          void Session_start(object sender, EventArgs e)
+        {
+            Application["UserCount"] = (int)Application["UserCount"]+1;
         }
     }
 }
