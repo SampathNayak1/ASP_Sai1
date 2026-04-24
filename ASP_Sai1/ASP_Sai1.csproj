@@ -100,6 +100,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="About.aspx" />
+    <Content Include="ADO_Login.aspx" />
     <Content Include="ApplicationCountUser.aspx" />
     <Content Include="BookMyShowSample.aspx" />
     <Content Include="Calculator.aspx" />
@@ -210,6 +211,13 @@
     <Content Include="Site.Mobile.Master" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ADO_Login.aspx.cs">
+      <DependentUpon>ADO_Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ADO_Login.aspx.designer.cs">
+      <DependentUpon>ADO_Login.aspx</DependentUpon>
+    </Compile>
     <Compile Include="ApplicationCountUser.aspx.cs">
       <DependentUpon>ApplicationCountUser.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
