@@ -171,6 +171,7 @@
     <Content Include="Content\bootstrap-grid.css.map" />
     <Content Include="ExperiencedITJobApplication.aspx" />
     <Content Include="Session.aspx" />
+    <Content Include="EMail.aspx" />
     <None Include="Scripts\jquery-3.7.0.intellisense.js" />
     <Content Include="Scripts\jquery-3.7.0.js" />
     <Content Include="Scripts\jquery-3.7.0.min.js" />
@@ -417,6 +418,13 @@
     </Compile>
     <Compile Include="Session.aspx.designer.cs">
       <DependentUpon>Session.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="EMail.aspx.cs">
+      <DependentUpon>EMail.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EMail.aspx.designer.cs">
+      <DependentUpon>EMail.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
