@@ -50,8 +50,8 @@
                         <asp:TextBox ID="txtEmail" runat="server"></asp:TextBox>
                         <asp:RequiredFieldValidator ID="rfvEmail" runat="server" ForeColor="Red" ControlToValidate="txtEmail"
                             ErrorMessage="Please enter Email"></asp:RequiredFieldValidator>
-                        <%--<asp:RegularExpressionValidator ID="revEmail" runat="server" ForeColor="Red"
-                            ControlToValidate="txtEmail" ValidationExpression="^\w+([.-]?\w+)*@\w+([.-]?\w+)*\.\w{2,3}$"></asp:RegularExpressionValidator>--%>
+                        <asp:regularexpressionvalidator id="revemail" runat="server" forecolor="red"
+                            controltovalidate="txtemail" validationexpression="\w+([-+.']\w+)*@\w+([-.]*\w+)*\.\w+([-.]\+)*"></asp:regularexpressionvalidator>
                     </td>
 
 
@@ -63,8 +63,8 @@
                         <asp:TextBox ID="txtMoboileNo" runat="server"></asp:TextBox>
                         <asp:RequiredFieldValidator ID="rfvMobileno" runat="server" ForeColor="Red" ControlToValidate="txtMoboileNo"
                             ErrorMessage="Please enter Mobile number"> </asp:RequiredFieldValidator>
-                       <%-- <asp:RegularExpressionValidator ID="revMobileno" runat="server" ControlToValidate="txtMoboileNo" ForeColor="Red"
-                            ValidationExpression="^[6-9]\d{9}$" ErrorMessage="Validate your Phno"></asp:RegularExpressionValidator>--%>
+                        <asp:RegularExpressionValidator ID="revMobileno" runat="server" ControlToValidate="txtMoboileNo" ForeColor="Red"
+                            ValidationExpression="\d{10}" ErrorMessage="Validate your Phno"></asp:RegularExpressionValidator>
                     </td>
 
                 </tr>
@@ -75,14 +75,7 @@
                         <asp:TextBox ID="txtPass" runat="server"></asp:TextBox>
                         <asp:RequiredFieldValidator ID="rfvPass" runat="server" ForeColor="Red" ControlToValidate="txtPass"
                             ErrorMessage="Please enter Password"></asp:RequiredFieldValidator>
-                   <%--     <asp:RegularExpressionValidator
-                            ID="revPass"
-                            runat="server"
-                            ControlToValidate="txtPass"
-                            ErrorMessage="Password must contain uppercase, lowercase, number & special character"
-                            ForeColor="Red"
-                            ValidationExpression="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&]).{6,}$">--%>
-                      </asp:RegularExpressionValidator>
+                   
                     </td>
                 </tr>
                 <tr>
