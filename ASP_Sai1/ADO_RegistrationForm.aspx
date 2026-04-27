@@ -44,14 +44,49 @@
                     </td>
                 </tr>
                 <tr>
+                    <td>Gender :
+                    </td>
+                    <td>
+                        <asp:RadioButton ID="rbnMale" runat="server" GroupName="gender" Text="Male" AutoPostBack="true" OnCheckedChanged="rbnMale_CheckedChanged" />
+                        <asp:RadioButton ID="rbnFemale" runat="server" GroupName="gender" Text="Female" AutoPostBack="true" OnCheckedChanged="rbnMale_CheckedChanged" />
+                    </td>
+                </tr>
+                <tr>
+                    <td>Hobbies :</td>
+                    <td>
+                        <%-- <asp:CheckBoxList ID="cblHobbies" runat="server" AutoPostBack="true" >
+                            <asp:ListItem Text="Reading" Value="Reading"  ></asp:ListItem>
+                            <asp:ListItem Text="Playing" Value="Playing"></asp:ListItem>
+                            <asp:ListItem Text="Gamming" Value="Gamming"></asp:ListItem>
+                        </asp:CheckBoxList>--%>
+                        <asp:CheckBoxList ID="cblHobbies" runat="server">
+                            <asp:ListItem Text="Reading" />
+                            <asp:ListItem Text="Gaming" />
+                            <asp:ListItem Text="Traveling" />
+                        </asp:CheckBoxList>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Select Language :
+                    </td>
+                    <td>
+                        <asp:DropDownList ID="ddlLanguages" runat="server" AutoPostBack="true"  >
+                            <asp:ListItem Text="---Choose---"></asp:ListItem>
+                            <asp:ListItem Text="CSharp" Value="CSharp"></asp:ListItem>
+                            <asp:ListItem Text="SQLServer" Value="SQLServer"></asp:ListItem>
+                            <asp:ListItem Text="ADO.Net" Value="ADO.Net"></asp:ListItem>
+                        </asp:DropDownList>
+                    </td>
+                </tr>
+                <tr>
                     <td>Email Id :
                     </td>
                     <td>
                         <asp:TextBox ID="txtEmail" runat="server"></asp:TextBox>
                         <asp:RequiredFieldValidator ID="rfvEmail" runat="server" ForeColor="Red" ControlToValidate="txtEmail"
                             ErrorMessage="Please enter Email"></asp:RequiredFieldValidator>
-                        <asp:regularexpressionvalidator id="revemail" runat="server" forecolor="red"
-                            controltovalidate="txtemail" validationexpression="\w+([-+.']\w+)*@\w+([-.]*\w+)*\.\w+([-.]\+)*"></asp:regularexpressionvalidator>
+                        <asp:RegularExpressionValidator ID="revemail" runat="server" ForeColor="red"
+                            ControlToValidate="txtemail" ValidationExpression="\w+([-+.']\w+)*@\w+([-.]*\w+)*\.\w+([-.]\+)*"></asp:RegularExpressionValidator>
                     </td>
 
 
@@ -75,13 +110,14 @@
                         <asp:TextBox ID="txtPass" runat="server"></asp:TextBox>
                         <asp:RequiredFieldValidator ID="rfvPass" runat="server" ForeColor="Red" ControlToValidate="txtPass"
                             ErrorMessage="Please enter Password"></asp:RequiredFieldValidator>
-                   
                     </td>
                 </tr>
                 <tr>
                     <td></td>
                     <td>
                         <asp:Button ID="btnSubmit" runat="server" Text="Submit" OnClick="btnSubmit_Click" />
+                        <asp:Button ID="btnGender" runat="server" Text="Radio" OnClick="btnGender_Click" />
+                        <asp:Label ID="lblMsg" runat="server"></asp:Label>
                     </td>
                 </tr>
             </table>
