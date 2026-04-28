@@ -33,15 +33,6 @@ namespace ASP_Sai1
         protected global::System.Web.UI.WebControls.TextBox txtFname;
 
         /// <summary>
-        /// rfvFname control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.RequiredFieldValidator rfvFname;
-
-        /// <summary>
         /// txtLname control.
         /// </summary>
         /// <remarks>
@@ -51,15 +42,6 @@ namespace ASP_Sai1
         protected global::System.Web.UI.WebControls.TextBox txtLname;
 
         /// <summary>
-        /// rfvLname control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.RequiredFieldValidator rfvLname;
-
-        /// <summary>
         /// txtUname control.
         /// </summary>
         /// <remarks>
@@ -67,15 +49,6 @@ namespace ASP_Sai1
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox txtUname;
-
-        /// <summary>
-        /// rfvUname control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.RequiredFieldValidator rfvUname;
 
         /// <summary>
         /// rbnMale control.
@@ -123,24 +96,6 @@ namespace ASP_Sai1
         protected global::System.Web.UI.WebControls.TextBox txtEmail;
 
         /// <summary>
-        /// rfvEmail control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.RequiredFieldValidator rfvEmail;
-
-        /// <summary>
-        /// revemail control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.RegularExpressionValidator revemail;
-
-        /// <summary>
         /// txtMoboileNo control.
         /// </summary>
         /// <remarks>
@@ -148,24 +103,6 @@ namespace ASP_Sai1
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox txtMoboileNo;
-
-        /// <summary>
-        /// rfvMobileno control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.RequiredFieldValidator rfvMobileno;
-
-        /// <summary>
-        /// revMobileno control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.RegularExpressionValidator revMobileno;
 
         /// <summary>
         /// txtPass control.
@@ -177,13 +114,13 @@ namespace ASP_Sai1
         protected global::System.Web.UI.WebControls.TextBox txtPass;
 
         /// <summary>
-        /// rfvPass control.
+        /// txtCPass control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.RequiredFieldValidator rfvPass;
+        protected global::System.Web.UI.WebControls.TextBox txtCPass;
 
         /// <summary>
         /// btnSubmit control.
@@ -195,15 +132,6 @@ namespace ASP_Sai1
         protected global::System.Web.UI.WebControls.Button btnSubmit;
 
         /// <summary>
-        /// btnGender control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnGender;
-
-        /// <summary>
         /// lblMsg control.
         /// </summary>
         /// <remarks>
@@ -211,5 +139,14 @@ namespace ASP_Sai1
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Label lblMsg;
+
+        /// <summary>
+        /// grdData control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.GridView grdData;
     }
 }

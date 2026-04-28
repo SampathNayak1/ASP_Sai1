@@ -23,8 +23,8 @@
                     </td>
                     <td>
                         <asp:TextBox ID="txtUsername" runat="server"></asp:TextBox>
-                        <%-- <asp:RequiredFieldValidator ID="rfvUsername" runat="server" ForeColor="Red" ControlToValidate="txtUsername"
-                            ErrorMessage="Please enter username"></asp:RequiredFieldValidator>--%>
+                         <asp:requiredfieldvalidator id="rfvusername" runat="server" forecolor="red" controltovalidate="txtusername"
+                            errormessage="please enter username"></asp:requiredfieldvalidator>
                     </td>
                 </tr>
                 <tr>
@@ -33,41 +33,46 @@
                     </td>
                     <td>
                         <asp:TextBox ID="txtPassword" runat="server"> </asp:TextBox>
-                        <%--    <asp:RequiredFieldValidator ID="rfvPassword" runat="server" ForeColor="Red" ControlToValidate="txtPassword"
-                            ErrorMessage="Please enter password"></asp:RequiredFieldValidator>--%>
+                            <asp:requiredfieldvalidator id="rfvpassword" runat="server" forecolor="red" controltovalidate="txtpassword"
+                            errormessage="please enter password"></asp:requiredfieldvalidator>
                     </td>
                 </tr>
-               
-                 <tr>
+
+                <tr>
 
                     <td>
-                        <asp:button id="btnsubmit" runat="server" text="insert" OnClick="btnsubmit_Click1"      />
+                        <asp:Button ID="btnupdate" runat="server" Text="Update" OnClick="btnupdate_Click1" />
+                        <asp:Button ID="btndelete" runat="server" Text="Delete" OnClick="btndelete_click" />
+                    </td>
+                    <td>
+                        <asp:Button ID="btnsubmit" runat="server" Text="Insert" OnClick="btnsubmit_Click1" />
+
+
                     </td>
                 </tr>
+
                 <tr>
                     <td>
-                        <asp:button id="btnupdate" runat="server" text="update" OnClick="btnupdate_Click1"   />
-                    </td>
+                        <asp:TextBox ID="txtsearch" runat="server"></asp:TextBox></td>
                     <td>
-                        <asp:button id="btndelete" runat="server" text="delete" onclick="btndelete_click" />
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <asp:textbox id="txtsearch" runat="server"></asp:textbox></td>
-                    <td>
-                        <asp:button id="btnsearch" runat="server" text="search" onclick="btnsearch_click" />
+                        <asp:Button ID="btnsearch" runat="server" Text="search" OnClick="btnsearch_click" />
                     </td>
                 </tr>
             </table>
 
-            
-                   
-                        <asp:GridView ID="grdData" runat="server" 
-                                        AllowPaging="true" 
-                                        PageSize="5" 
-                                        DataKeyNames="Uid"
-                                        AutoGenerateColumns="false" OnPageIndexChanging="grdData_PageIndexChanging" OnRowCancelingEdit="grdData_RowCancelingEdit" OnRowEditing="grdData_RowEditing" OnRowUpdating="grdData_RowUpdating" OnRowDeleting="grdData_RowDeleting"                  >
+            <table align="center">
+                <tr>
+                    <td>
+                        <asp:GridView ID="grdData" runat="server"
+                            AllowPaging="true"
+                            PageSize="5"
+                            DataKeyNames="Uid"
+                            AutoGenerateColumns="false"
+                            OnPageIndexChanging="grdData_PageIndexChanging"
+                            OnRowCancelingEdit="grdData_RowCancelingEdit"
+                            OnRowEditing="grdData_RowEditing"
+                            OnRowUpdating="grdData_RowUpdating"
+                            OnRowDeleting="grdData_RowDeleting">
                             <Columns>
 
                                 <asp:TemplateField HeaderText="Username">
@@ -90,19 +95,24 @@
 
                                 <asp:TemplateField HeaderText="Actions">
                                     <ItemTemplate>
-                                        <asp:Button ID="btnsEdit"  runat="server" Text="Edit" CommandName="Edit"/>
+                                        <asp:Button ID="btnsEdit" runat="server" Text="Edit" CommandName="Edit" />
                                         <asp:Button ID="btnsDelte" runat="server" Text="Delete" CommandName="Delete" />
                                     </ItemTemplate>
                                     <EditItemTemplate>
-                                        <asp:Button ID="btnsUpdate" runat="server" Text="Update" CommandName="Update"/>
-                                        <asp:Button ID="btnsCancel" runat="server" Text="Cancel" CommandName="Cancel"/>
+                                        <asp:Button ID="btnsUpdate" runat="server" Text="Update" CommandName="Update" />
+                                        <asp:Button ID="btnsCancel" runat="server" Text="Cancel" CommandName="Cancel" />
                                     </EditItemTemplate>
                                 </asp:TemplateField>
 
                             </Columns>
                         </asp:GridView>
-               
-             
+
+                    </td>
+                </tr>
+            </table>
+
+
+
         </div>
 
 
